@@ -1,5 +1,5 @@
-Movie Recommendation System
- a movie recommendation system is done through Content-Based Filtering method, depending on the desired complexity, data availability, and goals. Here is the approache made :
+
+ Movie recommendation system is done through Content-Based Filtering method, depending on the desired complexity, data availability, and goals. Here is the approache made :
 
 Content-Based Filtering
 This system recommends movies based on characteristics (or "content") of items the user has enjoyed in the past. For movies, this could involve genre, director, actors, or keywords extracted from movie descriptions.
