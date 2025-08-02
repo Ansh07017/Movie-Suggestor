@@ -1,0 +1,111 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="remoteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2b6cb8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4299e1;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="cloudPattern" x="0" y="0" width="40" height="25" patternUnits="userSpaceOnUse">
+      <ellipse cx="20" cy="15" rx="12" ry="6" fill="white" opacity="0.1"/>
+      <ellipse cx="15" cy="12" rx="8" ry="4" fill="white" opacity="0.15"/>
+      <ellipse cx="25" cy="12" rx="6" ry="3" fill="white" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#remoteGrad)"/>
+  <rect width="400" height="200" fill="url(#cloudPattern)" opacity="0.6"/>
+  
+  <!-- Home Office Setup -->
+  <g transform="translate(50, 80)">
+    <!-- Desk -->
+    <rect x="0" y="40" width="80" height="8" fill="#8b4513" rx="2"/>
+    <rect x="5" y="48" width="4" height="25" fill="#654321"/>
+    <rect x="71" y="48" width="4" height="25" fill="#654321"/>
+    
+    <!-- Laptop -->
+    <rect x="15" y="25" width="30" height="18" fill="#2d3748" rx="2"/>
+    <rect x="17" y="27" width="26" height="14" fill="#4a90e2"/>
+    <rect x="20" y="30" width="20" height="8" fill="#e2e8f0"/>
+    <line x1="22" y1="32" x2="38" y2="32" stroke="#4a90e2" stroke-width="1"/>
+    <line x1="22" y1="34" x2="35" y2="34" stroke="#4a90e2" stroke-width="1"/>
+    <line x1="22" y1="36" x2="33" y2="36" stroke="#4a90e2" stroke-width="1"/>
+    
+    <!-- Coffee Cup -->
+    <rect x="55" y="35" width="8" height="10" fill="#8b4513" rx="1"/>
+    <ellipse cx="59" cy="35" rx="4" ry="1" fill="#654321"/>
+    <path d="M63,38 Q66,38 66,41 Q66,44 63,44" stroke="#8b4513" stroke-width="1" fill="none"/>
+    
+    <!-- Plant -->
+    <rect x="70" y="30" width="6" height="15" fill="#8b4513"/>
+    <circle cx="73" cy="28" r="5" fill="#38a169"/>
+    <path d="M68,25 Q70,20 75,22 Q78,25 73,28" fill="#38a169"/>
+    <path d="M78,25 Q80,22 75,20 Q70,22 73,28" fill="#38a169"/>
+  </g>
+  
+  <!-- WiFi Signal -->
+  <g transform="translate(160, 60)">
+    <path d="M0,30 Q15,15 30,30" stroke="white" stroke-width="2" fill="none" opacity="0.8"/>
+    <path d="M5,30 Q15,20 25,30" stroke="white" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M10,30 Q15,25 20,30" stroke="white" stroke-width="2" fill="none" opacity="0.4"/>
+    <circle cx="15" cy="30" r="2" fill="white"/>
+    <text x="15" y="45" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Connected</text>
+  </g>
+  
+  <!-- Global Connection -->
+  <g transform="translate(250, 70)">
+    <circle cx="30" cy="30" r="25" fill="none" stroke="white" stroke-width="2" opacity="0.7"/>
+    <ellipse cx="30" cy="30" rx="25" ry="12" fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
+    <ellipse cx="30" cy="30" rx="12" ry="25" fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
+    <circle cx="30" cy="30" r="3" fill="white"/>
+    
+    <!-- Connection points -->
+    <circle cx="15" cy="20" r="2" fill="#ffa500">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="45" cy="25" r="2" fill="#ffa500">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="35" cy="10" r="2" fill="#ffa500">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Digital Collaboration -->
+  <g transform="translate(320, 120)">
+    <rect x="0" y="0" width="40" height="25" fill="#2d3748" rx="3"/>
+    <rect x="2" y="2" width="36" height="21" fill="#4a90e2"/>
+    
+    <!-- Video call participants -->
+    <rect x="4" y="4" width="15" height="8" fill="#e2e8f0"/>
+    <rect x="21" y="4" width="15" height="8" fill="#e2e8f0"/>
+    <rect x="4" y="14" width="15" height="8" fill="#e2e8f0"/>
+    <rect x="21" y="14" width="15" height="8" fill="#e2e8f0"/>
+    
+    <!-- Participants -->
+    <circle cx="11" cy="8" r="2" fill="#4a90e2"/>
+    <circle cx="28" cy="8" r="2" fill="#38a169"/>
+    <circle cx="11" cy="18" r="2" fill="#e53e3e"/>
+    <circle cx="28" cy="18" r="2" fill="#ffa500"/>
+    
+    <text x="20" y="35" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Team Call</text>
+  </g>
+  
+  <!-- Productivity Elements -->
+  <g transform="translate(80, 140)">
+    <rect x="0" y="0" width="20" height="15" fill="#38a169" rx="2"/>
+    <path d="M5,7 L8,10 L15,3" stroke="white" stroke-width="2" fill="none"/>
+    <text x="10" y="25" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Done</text>
+  </g>
+  
+  <g transform="translate(140, 140)">
+    <circle cx="10" cy="10" r="8" fill="#ffa500"/>
+    <rect x="6" y="6" width="8" height="2" fill="white"/>
+    <rect x="6" y="10" width="8" height="2" fill="white"/>
+    <rect x="6" y="14" width="8" height="2" fill="white"/>
+    <text x="10" y="30" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Tasks</text>
+  </g>
+  
+  <!-- Title Area -->
+  <rect x="0" y="0" width="400" height="40" fill="rgba(43, 108, 184, 0.9)"/>
+  <text x="20" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Remote Work</text>
+</svg>
